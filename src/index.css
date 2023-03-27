@@ -37,7 +37,7 @@ p {
   border-bottom: 1px solid #b39e88;
 }
 .navbar h1 {
-  color: #7b69b2;
+  color: #423dce;
   font-weight: 900;
 }
 .navbar .links {
@@ -50,7 +50,7 @@ p {
   border-radius: 9px;
 }
 .navbar a:hover {
-  color: #d3c6ff;
+  color: #c4c0ff;
   background-color: #333;
 }
 .content {
@@ -69,8 +69,8 @@ p {
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
 .blog-preview h2 {
-  font-size: 20px;
-  color: #7e70d0;
+  font-size: 40px;
+  color: #1a0882;
   margin-bottom: 8px;
 }
 
@@ -113,13 +113,13 @@ a {
 
 .delete-btn,
 .error-btn {
-  background-color: rgb(211, 65, 65);
-  padding: 2vmin;
+  background-color: rgba(242, 108, 108, 0.475);
+  padding: 1vmin;
   border: none;
-  color: white;
-  border-radius: 10px;
-  font-size: 3vmin;
+  color: rgb(54, 46, 46);
+  font-size: 2vmin;
   font-weight: 800;
+  border-radius: 8px;
 }
 
 .delete-btn:hover {
