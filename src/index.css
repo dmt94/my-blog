@@ -110,3 +110,18 @@ a {
   border-radius: 8px;
   cursor: pointer;
 }
+
+.delete-btn {
+  background-color: rgb(205, 44, 44);
+  padding: 2vmin;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 3vmin;
+}
+
+.delete-btn:hover {
+  background-color: rgba(175, 8, 8, 0.825);
+  cursor: pointer;
+  color: rgb(246, 234, 234);
+}
