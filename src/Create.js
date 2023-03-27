@@ -1,14 +1,36 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const Create = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const [author, setAuthor] = useState('daevah');
+  const [isPending, setIsPending] = useState(false);
+  const history = useHistory();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    //blog object
+    const blog = {title, body, author};
+
+    setIsPending(true);
+    
+    fetch('http://localhost:8000/blogs', {
+      method: 'POST',
+      headers: {"Content-Type": "application/json"},
+      //pass object we want to turn into JSON string, the blog
+      //stringify (object => JSON)
+      body: JSON.stringify(blog)
+    }).then(() => {
+      console.log("new blog added");
+      setIsPending(false);
+    })
+  }
 
   return ( 
     <div className="create">
       <h2>Add a New Blog</h2>
-      <form action="">
+      <form onSubmit={ handleSubmit }>
         <label>Blog Title</label>
         <input 
           type="text" 
@@ -30,7 +52,7 @@ const Create = () => {
           <option value="daevah">daevah</option>
           <option value="maries">maries</option>
         </select>
-        <button>Add Blog</button>
+        {!isPending && <button>Add Blog</button>}
       </form>
     </div>
    );
