@@ -10,6 +10,24 @@ body {
   font-family: "Quicksand";
   color: #333;
 }
+
+.blog-div {
+  margin: 3vmin auto;
+  border-radius: 10px;
+  padding: 4vmin;
+  background-color: rgba(24, 24, 24, 0.069);
+}
+
+.blog-div p {
+  color: rgb(30, 29, 29);
+  text-align: left;
+  font-size: 3vmin;
+}
+
+p {
+  margin: 1vmin auto;
+}
+
 .navbar {
   padding: 20px;
   display: flex;
@@ -58,4 +76,37 @@ body {
 
 a {
   text-decoration: none;
+}
+
+/* create new blog form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #2f3245;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 10px;
+}
+.create button {
+  background: #2d2447;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
