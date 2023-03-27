@@ -111,13 +111,15 @@ a {
   cursor: pointer;
 }
 
-.delete-btn {
-  background-color: rgb(205, 44, 44);
+.delete-btn,
+.error-btn {
+  background-color: rgb(211, 65, 65);
   padding: 2vmin;
   border: none;
   color: white;
   border-radius: 10px;
   font-size: 3vmin;
+  font-weight: 800;
 }
 
 .delete-btn:hover {
@@ -125,3 +127,8 @@ a {
   cursor: pointer;
   color: rgb(246, 234, 234);
 }
+
+.error-div {
+  margin: 5vmin auto;
+}
+

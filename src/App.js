@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Create from './Create';
 import BlogDetails from './BlogDetails';
+import NotFound from './NotFound';
 
 function App() {
   return (
@@ -23,6 +24,12 @@ function App() {
           <Route path="/blogs/:id" element={
             <div className='content'>
               <BlogDetails />
+            </div>
+            } />
+          {/* Has to be at bottom or it will catch all routes */}
+          <Route path="*" element={
+            <div className='content'>
+              <NotFound/>
             </div>
             } />
         </Routes>
